@@ -68,3 +68,13 @@ const colors = ['red', 'green', 'blue'];
 
 for (let color of colors)
 console.log(color);
+
+let i2 = 0;
+while (i2 <= 10) {
+if (i2 % 2 === 0) {
+    i++;
+    continue;
+}
+    console.log(i2);
+    i2++;
+}
