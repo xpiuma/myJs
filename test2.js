@@ -135,4 +135,42 @@ let sum = 0;
         return 'A';
 }
 
-z
+showStars(2);
+
+function showStars(rows) {
+let stars = '';
+    for (let i = 0; i < rows; i++) {
+        stars += '*';
+        console.log(stars);
+    }
+}
+
+
+showPrimes(20);
+
+function showPrimes(limit) {
+    for (let number = 2; number <= limit; number++) {
+        
+        let isPrime = true;
+        
+        for (let factor = 2; factor < number; factor++) {
+            if (number % factor === 0) isPrime = false; break;
+        }
+        if (isPrime) console.log(number);
+    }
+}
+
+
+showPrimes2(10);
+
+function showPrimes2(limit) {
+    for (let number = 2; number <= limit; number++)
+    if (isPrime(number)) console.log(number);
+}
+
+function isPrime(number) {
+    for (let factor = 2; factor < number; factor++) {
+        if (number % factor === 0) return false;
+        return true;
+    }
+}
